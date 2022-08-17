@@ -23,6 +23,13 @@ class TuringMachine:
 
     def add_new_state(self, name: str, transitions: dict[str, (str, str, str)]):
 
+        """
+        adds a new state, with given transitions
+        :param name: name of the state
+        :param transitions: transitions of the new state
+        :return:
+        """
+
         if name is None:
             raise TypeError("name must not be None")
 
@@ -30,6 +37,16 @@ class TuringMachine:
         return True
 
     def add_new_transition(self, state: str, read: str, write: str, direction: str, next_state: str):
+
+        """
+        adds a new transition the machine and add new states, if the states in the transition aren't already present
+        :param state: start state
+        :param read: char read form the tape
+        :param write: char to write on the tape
+        :param direction: direction to move the position
+        :param next_state: state of after the transition
+        :return:
+        """
 
         if state is None:
             raise TypeError("state must not be None")
@@ -73,6 +90,12 @@ class TuringMachine:
             return True
 
     def set_tape(self, new_tape: str):
+
+        """
+        takes a string and makes a list of characters out of it
+        :param new_tape: the new content of the tape
+        :return:
+        """
 
         if new_tape is None:
             raise TypeError("new_tape must not be None")
