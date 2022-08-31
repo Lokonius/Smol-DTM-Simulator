@@ -32,6 +32,8 @@ class TuringMachine:
 
         if name is None:
             raise TypeError("name must not be None")
+        elif transitions is None:
+            raise TypeError("name must not be None")
 
         self.states[name] = transitions
         return True
@@ -102,8 +104,6 @@ class TuringMachine:
 
         self.tape = []
 
-        for x in new_tape:
-
-            self.tape.append(x)
+        self.tape = [x for x in new_tape]
 
         return True
