@@ -1,5 +1,5 @@
-from TuringMachine import TuringMachine
-from Simulator import Simulator
+from turing_machine import TuringMachine
+from simulator import Simulator
 
 
 def main():

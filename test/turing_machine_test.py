@@ -1,5 +1,5 @@
 import unittest
-from source.TuringMachine import TuringMachine
+from source.turing_machine import TuringMachine
 
 
 class TMTestCase(unittest.TestCase):
