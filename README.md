@@ -1,6 +1,6 @@
 # DTM
 
- Smol Script to simulate Deterministic Turing Machines with one-sided infinite Tapes.
+ Smol script to simulate Deterministic Turing Machines with one-sided infinite tapes.
  
  This is just a very smol private project and lacks a lot of functionality and may have bugs.
  
