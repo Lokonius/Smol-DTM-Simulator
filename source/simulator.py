@@ -1,5 +1,6 @@
-import turing_machine
+from turing_machine import TuringMachine
 from time import sleep
+
 
 class Simulator:
 
